@@ -7,10 +7,11 @@
     - Write a script that lists all databases of your MySQL server..
 
 ## Task 1
-### Present in both
-    - Write a function that returns a set of common elements in two sets.
-    - Prototype: def common_elements(set_1, set_2):
-    - You are not allowed to import any module
+### Create a database
+    - Write a script that creates the database hbtn_0c_0 in your MySQL server.
+
+        -   If the database hbtn_0c_0 already exists, your script should not fail
+        -   You are not allowed to use the SELECT or SHOW statements
 
 ## Task 2
 ###  Update dictionary
