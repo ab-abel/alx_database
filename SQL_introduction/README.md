@@ -40,3 +40,20 @@ Write a script that lists all the tables of a database in your MySQL server.
     Write a script that prints the full description of the table first_table from the database hbtn_0c_0 in your MySQL server.
         - The database name will be passed as an argument of the mysql command
         - You are not allowed to use the DESCRIBE or EXPLAIN statements
+## Task 6
+### List all in table
+    Write a script that lists all rows of the table first_table from the database hbtn_0c_0 in your MySQL server.
+    - All fields should be printed
+    - The database name will be passed as an argument of the mysql command
+## Task 7
+### First add
+    Write a script that inserts a new row in the table first_table (database hbtn_0c_0) in your MySQL server.
+        - New row:
+            - id = 89
+            - name = Holberton School
+        - The database name will be passed as an argument of the mysql command
+## Task 5
+### Full description
+    Write a script that prints the full description of the table first_table from the database hbtn_0c_0 in your MySQL server.
+        - The database name will be passed as an argument of the mysql command
+        - You are not allowed to use the DESCRIBE or EXPLAIN statements
