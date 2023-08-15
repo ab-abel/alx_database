@@ -20,14 +20,10 @@
     -   You are not allowed to use the SELECT or SHOW statements
 
 ## Task 3
-### Best score
-Write a function that returns a key with the biggest integer value.
-    - Prototype: def best_score(a_dictionary):
-    - You can assume that all values are only integers
-    - If no score found, return None
-    - You can assume all students have a different score
-    - You are not allowed to import any module
+###  List tables
+Write a script that lists all the tables of a database in your MySQL server.
 
+    - The database name will be passed as argument of mysql command (in the following example: mysql is the name of the database)
 ## Task 4
 ### Multiply by using map
     - Prototype: def multiply_list_map(my_list=[], number=0):
