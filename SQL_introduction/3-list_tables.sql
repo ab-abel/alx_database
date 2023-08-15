@@ -1,5 +1,5 @@
 -- list all table in db
 
-USE ?;
+USE VALUES;
 
 SHOW TABLES;
