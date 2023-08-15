@@ -1,7 +1,7 @@
 -- create first_table 
 USE hbtn_0c_0;
 
-CREATE TABLE first_table(
+CREATE TABLE IF NOT EXISTS first_table(
     id INT;
     name VARCHAR(265);
 );
