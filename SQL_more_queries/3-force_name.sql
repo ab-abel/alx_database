@@ -1,6 +1,6 @@
 -- create a table in your sql server
 
-USE hbtn_0d_2;
+USE ?;
 
 CREATE TABLE
     IF NOT EXISTS
