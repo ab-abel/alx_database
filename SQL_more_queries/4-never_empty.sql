@@ -5,4 +5,4 @@ CREATE TABLE
     id_not_null (
         id INT NOTNULL DEFAULT=1,
         name VARCHAR(256)
-    )
+    );
