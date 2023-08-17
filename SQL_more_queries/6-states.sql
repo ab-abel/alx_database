@@ -5,7 +5,7 @@ CREATE DATABASE
 
 CREATE TABLE
     IF NOT EXISTS
-    states (
+    hbtn_0d_usa.states (
         id INT UNIQUE AUTO INCREMENT NOT NULL PRIMARY KEY,
         name VARCHAR(256) NOT NULL
     );
