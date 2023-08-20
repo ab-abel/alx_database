@@ -6,53 +6,84 @@
 ###  MY privileges!
     - Write a script that lists all privileges of the MySQL users user_0d_1 and user_0d_2 on your server (in localhost).
 ## Task 1
-### Create a database
-    - Write a script that creates the database hbtn_0c_0 in your MySQL server.
+###  Root user
+    - Write a script that creates the MySQL server user user_0d_1.
 
-        -   If the database hbtn_0c_0 already exists, your script should not fail
-        -   You are not allowed to use the SELECT or SHOW statements
+        - user_0d_1 should have all privileges on your MySQL server
+        - The user_0d_1 password should be set to user_0d_1_pwd
+        - If the user user_0d_1 already exists, your script should not fail
 
 ## Task 2
-###  Delete a database
-   Write a script that deletes the database hbtn_0c_0 in your MySQL server.
-    - If the database hbtn_0c_0 doesn’t exist, your script should not fail
-    -   You are not allowed to use the SELECT or SHOW statements
+###  Read user
+    - Write a script that creates the database hbtn_0d_2 and the user user_0d_2.
+
+        - user_0d_2 should have only SELECT privilege in the database hbtn_0d_2
+        - The user_0d_2 password should be set to user_0d_2_pwd
+        - If the database hbtn_0d_2 already exists, your script should not fail
+        - If the user user_0d_2 already exists, your script should not fail
 
 ## Task 3
-###  List tables
-Write a script that lists all the tables of a database in your MySQL server.
+###  Always a name
+    Write a script that creates the table force_name on your   MySQL server.
 
-    - The database name will be passed as argument of mysql command (in the following example: mysql is the name of the database)
+        - force_name description:
+            -  id INT
+            -  name VARCHAR(256) can’t be null
+        - The database name will be passed as an argument of the mysql command
+        - If the table force_name already exists, your script should not fail
 ## Task 4
-### First table
-    Write a script that creates a table called first_table in the current database in your MySQL server.
+### ID can't be null
+    - Write a script that creates the table id_not_null on your MySQL server.
 
-    - first_table description:
-        - id INT
+    - id_not_null description:
+        -   id INT with the default value 1
+        -   name VARCHAR(256)
+    - The database name will be passed as an argument of the mysql command
+    - If the table id_not_null already exists, your script should not fail
+
+
+## Task 5
+### Unique ID
+Write a script that creates the table unique_id on your MySQL server.
+
+    - unique_id description:
+        - id INT with the default value 1 and must be unique
         - name VARCHAR(256)
     - The database name will be passed as an argument of the mysql command
-    - If the table first_table already exists, your script should not fail
-    - You are not allowed to use the SELECT or SHOW statements
-
-## Task 5
-### Full description
-    Write a script that prints the full description of the table first_table from the database hbtn_0c_0 in your MySQL server.
-        - The database name will be passed as an argument of the mysql command
-        - You are not allowed to use the DESCRIBE or EXPLAIN statements
+    - If the table unique_id already exists, your script should not fail
 ## Task 6
-### List all in table
-    Write a script that lists all rows of the table first_table from the database hbtn_0c_0 in your MySQL server.
-    - All fields should be printed
-    - The database name will be passed as an argument of the mysql command
+### States table
+    Write a script that creates the database hbtn_0d_usa and the table states (in the database hbtn_0d_usa) on your MySQL server.
+
+        - states description:
+            -   id INT unique, auto generated, can’t be null and is a primary key
+            -   name VARCHAR(256) can’t be null
+        - If the database hbtn_0d_usa already exists, your script should not fail
+        - If the table states already exists, your script should not fail
 ## Task 7
-### First add
-    Write a script that inserts a new row in the table first_table (database hbtn_0c_0) in your MySQL server.
-        - New row:
-            - id = 89
-            - name = Holberton School
+### Cities table
+    Write a script that creates the database hbtn_0d_usa and the table cities (in the database hbtn_0d_usa) on your MySQL server.
+
+        - cities description:
+            -   id INT unique, auto generated, can’t be null and is a primary key
+            -   state_id INT, can’t be null and must be a FOREIGN KEY that references to id of the states table
+            -   name VARCHAR(256) can’t be null
+        - If the database hbtn_0d_usa already exists, your script should not fail
+        - If the table cities already exists, your script should not fail
+## Task 8
+### Cities of California
+    Write a script that lists all the cities of California that can be found in the database hbtn_0d_usa.
+
+        - The states table contains only one record where name = California (but the id can be different, as per the example)
+        - Results must be sorted in ascending order by cities.id
+        - You are not allowed to use the JOIN keyword
         - The database name will be passed as an argument of the mysql command
-## Task 5
-### Full description
-    Write a script that prints the full description of the table first_table from the database hbtn_0c_0 in your MySQL server.
+
+## Task 8
+### Cities by States
+    Write a script that lists all cities contained in the database hbtn_0d_usa.
+
+        - Each record should display: cities.id - cities.name - states.name
+        - Results must be sorted in ascending order by cities.id
+        - You can use only one SELECT statement
         - The database name will be passed as an argument of the mysql command
-        - You are not allowed to use the DESCRIBE or EXPLAIN statements
